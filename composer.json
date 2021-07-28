@@ -1,11 +1,11 @@
 {
   "name": "wazum/umleitung",
   "license": "GPL-3.0",
-  "description": "TYPO3 CMS Redirects site base agnostic and with fuzzy target",
-  "version": "1.0.0",
+  "description": "TYPO3 CMS Redirects site base agnostic and with variant sources and fuzzy target",
+  "version": "1.1.0",
   "require": {
     "php": ">=7.2.0",
-    "typo3/cms-redirects": "^9.5"
+    "typo3/cms-redirects": "^9.5 || ^10.4"
   },
   "type": "typo3-cms-extension",
   "autoload": {

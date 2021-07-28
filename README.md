@@ -42,6 +42,12 @@ before the redirect handling.
 This extension changes the order of middlewares and inserts the redirect handling before the 
 site base resolving to make this work.
 
+### Variant source redirects
+
+If you have a Site configuration with multiple variants and redirects with a specific hostname,
+redirects won't match by default for a variant. The extension uses configured variants and a redirect
+matches for all of them.
+
 ### Fuzzy target redirects
 
 The extension adds a new field to redirects where you can append a fuzzy target for the redirect.
