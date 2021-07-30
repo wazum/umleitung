@@ -35,10 +35,12 @@ class RedirectHandler extends \TYPO3\CMS\Redirects\Http\Middleware\RedirectHandl
             $request->getUri()->getQuery() ?? ''
         );
 
+
         if (is_array($matchedRedirect)) {
             $url = $redirectService->getTargetUrl(
                 $matchedRedirect,
                 $request->getQueryParams(),
+                $request->getUri(),
                 $request->getAttribute('site', null)
             );
             if ($url instanceof UriInterface) {

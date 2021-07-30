@@ -23,10 +23,11 @@ class RedirectService extends \TYPO3\CMS\Redirects\Service\RedirectService
     /**
      * @param array $matchedRedirect
      * @param array $queryParams
+     * @param UriInterface $uri
      * @param SiteInterface|null $site
      * @return UriInterface|null
      */
-    public function getTargetUrl(array $matchedRedirect, array $queryParams, ?SiteInterface $site = null): ?UriInterface
+    public function getTargetUrl(array $matchedRedirect, array $queryParams, UriInterface $uri, ?SiteInterface $site = null): ?UriInterface
     {
         $this->logger->debug('Found a redirect to process', $matchedRedirect);
         $linkParameterParts = GeneralUtility::makeInstance(TypoLinkCodecService::class)->decode((string)$matchedRedirect['target']);

@@ -2,7 +2,6 @@
   "name": "wazum/umleitung",
   "license": "GPL-3.0",
   "description": "TYPO3 CMS Redirects site base agnostic and with fuzzy target",
-  "version": "1.0.0",
   "require": {
     "php": ">=7.2.0",
     "typo3/cms-redirects": "^9.5"
